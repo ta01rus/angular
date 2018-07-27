@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule }    from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './application/app.component';
-import { GkxNavBar } from "./navbar/navbar.component";
-import { GkxFooter } from "./footer/footer.component";
-import { GkxLeftMenu } from "./left_menu/left_menu.component";
-import { GkxDesktop } from "./desktop/desktop.component";
+import { GkxNavBar } from './navbar/navbar.component';
+import { GkxFooter } from './footer/footer.component';
+import { LeftMenuComponent } from './left_menu/LeftMenu.component';
+import { GkxDesktop } from './desktop/desktop.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent, GkxNavBar, GkxFooter, GkxLeftMenu, GkxDesktop
+    AppComponent, GkxNavBar, GkxFooter, LeftMenuComponent, GkxDesktop
   ],
   imports: [
     BrowserModule,
