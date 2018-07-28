@@ -11,10 +11,6 @@ const appRoutes: Routes = [
       {path: '', component: ItemsComponent},
       {path: 'item/:ItemId', component: ItemComponent}
     ]}
- /* { path: 'crisis-center', component: CrisisListComponent },
-  { path: 'heroes',        component: HeroListComponent },
-  { path: '',   redirectTo: '/about', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent } */
 ];
 
 @NgModule({
