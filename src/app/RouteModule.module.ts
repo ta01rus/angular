@@ -1,9 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { ItemsComponent } from './items/items.component';
+import { ItemComponent } from './item/item.component';
 
 
-const routes: Routes = [
-  //{ path: '',   redirectTo: '/about', pathMatch: 'full' }
+const appRoutes: Routes = [
+  { path: 'items/:collId',   component: ItemsComponent ,
+    children: [
+      {path: '', component: ItemsComponent},
+      {path: 'item/:ItemId', component: ItemComponent}
+    ]}
  /* { path: 'crisis-center', component: CrisisListComponent },
   { path: 'heroes',        component: HeroListComponent },
   { path: '',   redirectTo: '/about', pathMatch: 'full' },
@@ -11,9 +18,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [
+  imports: [CommonModule,
     RouterModule.forRoot(
-      routes,
+      appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
