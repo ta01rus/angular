@@ -1,10 +1,10 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-   selector: "gkx-desktop",
+   selector: 'app-desktop',
    templateUrl: './desktop.component.html',
-   styleUrls: ["./desktop.component.css"] 
+   styleUrls: ['./desktop.component.css']
 })
-export class GkxDesktop{
-    
+export class DesktopComponent {
+
 }
