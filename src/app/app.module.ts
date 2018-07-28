@@ -6,18 +6,18 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './application/app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { LeftMenuComponent } from './leftmenu/LeftMenu.component';
+import { LeftMenuComponent } from './leftmenu/leftmenu.component';
 import { DesktopComponent } from './desktop/desktop.component';
-import { AppRoutingModule } from './app-routing.module';
+import { RouteModule } from './RouteModule.module';
 
 @NgModule({
   declarations: [
-    AppComponent, NavbarComponent, FooterComponent, LeftMenuComponent, DesktopComponent
+    AppComponent,  NavbarComponent, FooterComponent, LeftMenuComponent, DesktopComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    RouteModule
   ],
   providers: [],
   bootstrap: [AppComponent]

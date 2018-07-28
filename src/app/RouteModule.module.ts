@@ -1,19 +1,19 @@
-import { NgModule }              from '@angular/core';
-import { RouterModule, Routes }  from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
- 
-const appRoutes: Routes = [
+
+const routes: Routes = [
   //{ path: '',   redirectTo: '/about', pathMatch: 'full' }
  /* { path: 'crisis-center', component: CrisisListComponent },
   { path: 'heroes',        component: HeroListComponent },
   { path: '',   redirectTo: '/about', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent } */
 ];
- 
+
 @NgModule({
   imports: [
     RouterModule.forRoot(
-      appRoutes,
+      routes,
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
@@ -21,4 +21,6 @@ const appRoutes: Routes = [
     RouterModule
   ]
 })
-export class AppRoutingModule {}
+export class RouteModule {
+
+}
