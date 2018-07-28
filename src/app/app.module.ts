@@ -4,15 +4,15 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './application/app.component';
-import { GkxNavBar } from './navbar/navbar.component';
-import { GkxFooter } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 import { LeftMenuComponent } from './left_menu/LeftMenu.component';
-import { GkxDesktop } from './desktop/desktop.component';
+import { DesktopComponent } from './desktop/desktop.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent, GkxNavBar, GkxFooter, LeftMenuComponent, GkxDesktop
+    AppComponent, NavbarComponent, FooterComponent, LeftMenuComponent, DesktopComponent
   ],
   imports: [
     BrowserModule,
